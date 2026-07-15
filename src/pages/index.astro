@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSlideshow from '../components/HeroSlideshow';
+import TitleComponent from '../components/TitleComponent';
+import ResponsiveContainers from '../components/ResponsiveContainers';
+import ContatoContainer from '../components/containers/Contato';
+import ProContainer from '../components/containers/ProContainer';
+---
+
+<Layout title="Alber Leandro">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" async></script>
+
+	<div class="w-full overflow-hidden bg-gradient-to-br from-black via-[#131313] to-[#141414]">
+		<div class="flex flex-row relative overflow-hidden">
+			<HeroSlideshow />
+		
+			
+		</div>
+			<ProContainer />
+	
+
+		
+	</div>
+</Layout>

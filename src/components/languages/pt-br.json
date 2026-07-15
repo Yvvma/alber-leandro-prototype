@@ -1,0 +1,40 @@
+{
+  "menu": {
+    "series": "SÉRIES",
+    "music": "MÚSICAS",
+    "fashion": "MODA",
+    "publicidade": "PUBLICIDADE",
+    "contato":"CONTATO"
+  },
+ "series": {
+    "title": "SÉRIES"
+  },
+  "music": {
+    "title": "MUSICAS"
+  },
+  "fashion": {
+    "title": "MODA"
+  },
+  "publicidade": {
+    "title": "PUBLICIDADE"
+  },
+  "navigation": {
+    "verMenos": "Ver Menos",
+    "verMais": "Ver Mais"
+  },
+  "contact": {
+    "title": "CONTATO",
+    "text": "Para consultas comerciais e parcerias.",
+    "name": "Nome",
+    "send": "Enviar"
+  },
+  "terms-conditions": "Politica de Privacidade",
+ 
+  "saiba-mais": {
+    "title": "Saiba Mais"
+  },
+  "actions": {
+    "watch_now": "Assista Agora",
+    "listen_now": "Ouça Agora"
+  }
+}

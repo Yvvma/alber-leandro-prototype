@@ -1,0 +1,34 @@
+{
+  "name": "malcolm-vl-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.7",
+    "@astrojs/vercel": "^8.0.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.1",
+    "@mui/material": "^7.1.1",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "astro": "^5.7.14",
+    "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.7.4",
+    "i18next": "^25.2.1",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^15.5.2",
+    "react-intersection-observer": "^9.16.0",
+    "resend": "^6.12.4",
+    "swiper": "^11.2.8",
+    "tailwindcss": "^4.1.4"
+  }
+}

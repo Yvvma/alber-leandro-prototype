@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme{
+    --font-helvetica: 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueThin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueUltraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueRoman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueMedium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueHeavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/font/HelveticaNeueBlack.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EarlyEdition';
+    src: url('/font/EarlyEditionJNL.ttf') format('truetype');
+    font-style: normal;
+}
+  
+
+    @layer utilities {
+      /* Chrome, Safari and Opera */
+      .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Firefox */
+      .scrollbar-hidden {
+        scrollbar-width: none;
+      }
+
+      /* IE and Edge */
+      .scrollbar-hidden {
+        -ms-overflow-style: none;
+      }
+
+      /* Ensure overlays cover full viewport */
+      .modal-overlay {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        z-index: 999999 !important;
+      }
+    }

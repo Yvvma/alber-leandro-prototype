@@ -1,0 +1,40 @@
+{
+  "menu": {
+    "series": "SERIES",
+    "music": "MUSIC",
+    "fashion": "FASHION",
+    "publicidade": "ADVERTISING",
+    "contato": "CONTACT"
+  },
+  "series": {
+    "title": "SERIES"
+  },
+  "music": {
+    "title": "MUSIC"
+  },
+  "fashion": {
+    "title": "FASHION"
+  },
+  "publicidade": {
+    "title": "ADVERTISING"
+  },
+  "navigation": {
+    "verMenos": "See Less",
+    "verMais": "See More"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "text": "For business inquiries and partnerships.",
+    "name": "Name",
+    "send": "Send"
+  },
+  "saiba-mais": {
+    "title": "Learn More"
+  },
+
+  "terms-conditions": "Privacy Policy",
+  "actions": {
+    "watch_now": "Watch Now",
+    "listen_now": "Listen Now"
+  }
+}
