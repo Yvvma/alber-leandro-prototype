@@ -43,13 +43,15 @@ export default function Footer() {
         </div>
 
         {/* Email */}
-        <div className="flex flex-col gap-2">
+        <div id='contact' className="flex flex-col gap-2">
         
           <p className="text-sm font-helvetica font-[800] uppercase tracking-tight text-white">contact@alberleandro.com</p>
         </div>
 
         {/* Legal */}
-        <div className="flex flex-col gap-1 md:text-right border-t border-white/20">
+       
+        <div className="flex flex-col gap-1 md:text-right">
+           <div className="bg-white/10 w-full h-0.5"/>
           <p className="text-white/30 text-xs font-helvetica font-[300]">© Alber Leandro</p>
           <p className="text-white/30 text-xs font-helvetica font-[300]">Los Angeles, California</p>
         </div>
