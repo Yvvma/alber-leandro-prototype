@@ -13,7 +13,7 @@ const ProContainer = () => {
         <div className="bg-white">
           
           <div className="p-8 relative">
-            <h2 className="text-xl z-40 rotate-0 text-black absolute -right-4 
+            <h2 className="text-xl z-40 rotate-0 text-black absolute right-6 
             top-20 font-[800] rotate-90 font-helvetica tracking-tight uppercase max-w-max">
               Pro Skater
             </h2>
