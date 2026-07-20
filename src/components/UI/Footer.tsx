@@ -1,25 +1,31 @@
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-[#0a0a0a] text-white py-8 font-sans w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-12">
 
         {/* Transparency */}
         <div className="flex flex-col gap-2">
-          <p className="font-helvetica font-[800] tracking-tight uppercase text-sm mb-1">Transparency</p>
-          {["Privacy Policy", "Terms of Use"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-sm text-white/70 font-helvetica font-[400] uppercase tracking-tight hover:text-white transition-colors"
-            >
-              {item}
-            </a>
-          ))}
+          <p className="font-helvetica font-[800] tracking-tight uppercase text-sm mb-1">{t('footer.transparency')}</p>
+          <a
+            href="/privacidade"
+            className="text-sm text-white/70 font-helvetica font-[400] uppercase tracking-tight hover:text-white transition-colors"
+          >
+            {t('footer.privacyPolicy')}
+          </a>
+          <a
+            href="#"
+            className="text-sm text-white/70 font-helvetica font-[400] uppercase tracking-tight hover:text-white transition-colors"
+          >
+            {t('footer.termsOfUse')}
+          </a>
         </div>
 
         {/* Social Icons */}
         <div className="flex flex-col gap-3">
-          <p className="font-helvetica font-[800] tracking-tight uppercase text-sm mb-1">Social</p>
+          <p className="font-helvetica font-[800] tracking-tight uppercase text-sm mb-1">{t('footer.social')}</p>
           <div className="flex items-center gap-4">
             <a href="https://www.facebook.com/officialber/" aria-label="Facebook" className="text-white hover:text-white/70 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">

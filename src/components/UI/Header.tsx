@@ -1,42 +1,33 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import clsx from "clsx";
 
 const LANGUAGES = [
   { code: "PT", fullName: "Português" },
   { code: "EN", fullName: "English" },
 ];
-const MENU_ITEMS = [
-  { key: "pro skater", path: "#skater" },
-  {key: "entrepeneur", path: "#entrepeneur"},
-  {key: "contact", path: "#contact"},
-];
 
+const NAV_ITEMS: { key: string; path: string; tKey: string }[] = [
+  { key: "proSkater", path: "#skater", tKey: "nav.proSkater" },
+  { key: "entrepreneur", path: "#entrepreneur", tKey: "nav.entrepreneur" },
+  { key: "contact", path: "#contact", tKey: "nav.contact" },
+];
 
 const HeaderComponent = () => {
   const { t, i18n } = useTranslation();
-  const [scrolled, setScrolled] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [language, setLanguage] = useState(
     i18n.language.toUpperCase().includes("PT") ? "PT" : "EN"
   );
   const [isOpen, setIsOpen] = useState(false);
 
-  const SECTION_ITEMS = [
-    { key: "series", path: "#series", label: t('series.title', 'Séries') },
-    { key: "music", path: "#musica", label: t('music.title', 'Música') },
-    { key: "fashion", path: "#moda", label: t('fashion.title', 'Moda') },
-    { key: "publicidade", path: "#publicidade", label: t('publicidade.title', 'Publicidade') },
-    { key: "contato", path: "#contato", label: t('contact.title', 'Contato') },
-  ];
-
   const toggleLanguageMenu = () => {
     setIsLanguageMenuOpen((prev) => !prev);
   };
 
   const handleLanguageChange = (langCode: string) => {
-    i18n.changeLanguage(langCode.toLowerCase());
+    const map: Record<string, string> = { PT: "pt-br", EN: "en-us" };
+    i18n.changeLanguage(map[langCode] ?? langCode.toLowerCase());
     setLanguage(langCode);
     setIsLanguageMenuOpen(false);
   };
@@ -57,13 +48,13 @@ const HeaderComponent = () => {
     
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            {SECTION_ITEMS.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <a
                 key={item.key}
                 href={item.path}
                 className="text-white/70 hover:text-white text-xs uppercase font-helvetica font-[700] tracking-widest transition-colors"
               >
-                {item.label}
+                {t(item.tKey)}
               </a>
             ))}
             <button
@@ -146,13 +137,13 @@ const HeaderComponent = () => {
             style={{ originX: 1, originY: 0 }}
             className="fixed top-14 right-14 z-50 flex flex-col items-start justify-center gap-4 bg-black/90 backdrop-blur-md px-16 w-full h-full"
           >
-            {MENU_ITEMS.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <a key={item.key} href={item.path} onClick={() => setIsOpen(false)}>
                 <motion.button
                   whileHover={{ scale: 1.05, backgroundColor: "#ffffff22" }}
                   className="text-white uppercase px-8 py-4 text-xl  font-helvetica font-[800] tracking-base w-full text-center"
                 >
-                  {item.key.charAt(0).toUpperCase() + item.key.slice(1)}
+                  {t(item.tKey)}
                 </motion.button>
               </a>
             ))}

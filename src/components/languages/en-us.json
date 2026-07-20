@@ -1,40 +1,36 @@
 {
-  "menu": {
-    "series": "SERIES",
-    "music": "MUSIC",
-    "fashion": "FASHION",
-    "publicidade": "ADVERTISING",
-    "contato": "CONTACT"
+  "nav": {
+    "proSkater": "PRO SKATER",
+    "entrepreneur": "ENTREPRENEUR",
+    "contact": "CONTACT"
   },
-  "series": {
-    "title": "SERIES"
+  "hero": {
+    "alt": "Alber Leandro"
   },
-  "music": {
-    "title": "MUSIC"
+  "bio": {
+    "text": "Alber Leandro is a Brazilian professional skateboarder and entrepreneur whose career spans Brazil and the United States. Born in Brasília, he has built his path through competitions, international projects, and initiatives that promote urban culture, combining skateboarding, entrepreneurship, and lifestyle."
   },
-  "fashion": {
-    "title": "FASHION"
+  "proSkater": {
+    "title": "Pro Skater"
   },
-  "publicidade": {
-    "title": "ADVERTISING"
+  "entrepreneur": {
+    "title": "ENTREPRENEUR",
+    "p1": "Beyond skateboarding, Alber Leandro works as an entrepreneur between Brazil and the United States.",
+    "p2": "He is the founder of Line Embroidery, a Los Angeles-based brand focused on urban culture and streetwear.",
+    "p3": "He also develops projects and businesses that connect creativity, entrepreneurship, and the international market."
   },
-  "navigation": {
-    "verMenos": "See Less",
-    "verMais": "See More"
+  "footer": {
+    "transparency": "Transparency",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "social": "Social Media"
   },
-  "contact": {
-    "title": "CONTACT",
-    "text": "For business inquiries and partnerships.",
-    "name": "Name",
-    "send": "Send"
+  "language": {
+    "select": "Select Language"
   },
-  "saiba-mais": {
-    "title": "Learn More"
-  },
-
-  "terms-conditions": "Privacy Policy",
-  "actions": {
-    "watch_now": "Watch Now",
-    "listen_now": "Listen Now"
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last Updated: July 2026",
+    "text": "This Privacy Policy describes how we collect, use, and protect your information when you visit our website. We respect your privacy and are committed to safeguarding your personal data."
   }
 }

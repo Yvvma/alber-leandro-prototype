@@ -1,40 +1,36 @@
 {
-  "menu": {
-    "series": "SÉRIES",
-    "music": "MÚSICAS",
-    "fashion": "MODA",
-    "publicidade": "PUBLICIDADE",
-    "contato":"CONTATO"
+  "nav": {
+    "proSkater": "PRO SKATER",
+    "entrepreneur": "EMPRESÁRIO",
+    "contact": "CONTATO"
   },
- "series": {
-    "title": "SÉRIES"
+  "hero": {
+    "alt": "Alber Leandro"
   },
-  "music": {
-    "title": "MUSICAS"
+  "bio": {
+    "text": "Alber Leandro é skatista profissional e empresário brasileiro, com carreira construída entre o Brasil e os Estados Unidos. Natural de Brasília, consolidou sua trajetória no skate por meio de competições, projetos internacionais e iniciativas voltadas ao desenvolvimento da cultura urbana, unindo esporte, empreendedorismo e lifestyle."
   },
-  "fashion": {
-    "title": "MODA"
+  "proSkater": {
+    "title": "Pro Skater"
   },
-  "publicidade": {
-    "title": "PUBLICIDADE"
+  "entrepreneur": {
+    "title": "EMPRESÁRIO",
+    "p1": "Além do skate, Alber Leandro atua como empresário entre o Brasil e os Estados Unidos.",
+    "p2": "É fundador da Line Embroidery, marca sediada em Los Angeles voltada à cultura urbana e ao streetwear.",
+    "p3": "Também desenvolve projetos e negócios que conectam criatividade, empreendedorismo e o mercado internacional."
   },
-  "navigation": {
-    "verMenos": "Ver Menos",
-    "verMais": "Ver Mais"
+  "footer": {
+    "transparency": "Transparência",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
+    "social": "Redes Sociais"
   },
-  "contact": {
-    "title": "CONTATO",
-    "text": "Para consultas comerciais e parcerias.",
-    "name": "Nome",
-    "send": "Enviar"
+  "language": {
+    "select": "Selecionar Idioma"
   },
-  "terms-conditions": "Politica de Privacidade",
- 
-  "saiba-mais": {
-    "title": "Saiba Mais"
-  },
-  "actions": {
-    "watch_now": "Assista Agora",
-    "listen_now": "Ouça Agora"
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdate": "Última Atualização: Julho 2026",
+    "text": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações ao visitar nosso site. Respeitamos sua privacidade e estamos comprometidos em proteger seus dados pessoais."
   }
 }

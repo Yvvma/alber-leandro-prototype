@@ -84,19 +84,18 @@ export default function I18nProvider({ children }: { children: React.ReactNode }
         setIsChanging(true);
         try {
           await i18n.changeLanguage(language);
-          localStorage.setItem('language', language);
-
-          const url = new URL(window.location.href);
-          url.searchParams.set('lang', language);
-          window.history.replaceState({}, '', url.toString());
-
-          document.documentElement.lang = language;
         } catch (error) {
           console.error('Error changing language:', error);
         } finally {
           setIsChanging(false);
         }
       }
+
+      localStorage.setItem('language', language);
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', language);
+      window.history.replaceState({}, '', url.toString());
+      document.documentElement.lang = language;
     };
 
     changeLang();

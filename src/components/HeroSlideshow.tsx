@@ -5,8 +5,11 @@ const HeroSlideshow = () => {
       <div className="flex-1 flex justify-center items-center ">
         <div className=" aspect-[1/1] p-8">
           <img
-            src="/photos/alber-leandro-frame.png"
+            src="/photos/alber-leandro-frame.webp"
             alt="Alber Leandro"
+            width="800"
+            height="800"
+            loading="eager"
             className="w-full h-full object-cover object-[55%_center]  shadow-2xl shadow-white/10"
           />
         </div>
